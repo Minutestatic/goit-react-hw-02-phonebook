@@ -2,7 +2,7 @@ const Filter = ({ filter, onFilterChange }) => {
   return (
     <input
       type="text"
-      placeholder="Пошук за ім'ям"
+      placeholder="Search by name"
       value={filter}
       onChange={onFilterChange}
     />

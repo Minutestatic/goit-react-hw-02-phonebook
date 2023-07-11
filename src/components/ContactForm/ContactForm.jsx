@@ -50,7 +50,7 @@ class ContactForm extends Component {
             title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
           />
         </label>
-        <button type="submit">Додати контакт</button>
+        <button type="submit">Add contact</button>
       </form>
     );
   }
