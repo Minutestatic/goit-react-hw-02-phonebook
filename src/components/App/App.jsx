@@ -5,6 +5,8 @@ import ContactForm from 'components/ContactForm';
 import Filter from 'components/Filter';
 import ContactList from 'components/ContactList';
 
+import css from './App.module.css';
+
 class App extends Component {
   state = {
     contacts: [],
@@ -48,10 +50,10 @@ class App extends Component {
     );
 
     return (
-      <div>
-        <h1>Phonebook</h1>
+      <div className={css.container}>
+        <h1 className={css.title}>Phonebook</h1>
         <ContactForm addContact={this.addContact} />
-        <h2>Contacts</h2>
+        <h2 className={css.title}>Contacts</h2>
         <Filter filter={filter} onFilterChange={this.handleFilterChange} />
         <ContactList
           contacts={filteredContacts}
